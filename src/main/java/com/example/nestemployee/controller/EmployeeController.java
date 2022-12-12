@@ -2,6 +2,7 @@ package com.example.nestemployee.controller;
 
 import com.example.nestemployee.dao.EmployeeDao;
 import com.example.nestemployee.model.Employee;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -11,7 +12,7 @@ import java.util.HashMap;
 
 @RestController
 public class EmployeeController {
-
+    @Autowired
     private EmployeeDao edao;
 
     @CrossOrigin(origins = "*")
